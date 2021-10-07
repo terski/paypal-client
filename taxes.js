@@ -1,11 +1,12 @@
+require('dotenv').config();
 const axios = require('axios').default;
 const qs = require('qs');
 
 const authenticate = async () => {
     // Find the sandbox clientId and clientSecret here:
     // https://developer.paypal.com/developer/applications
-    const clientId = 'clientId';
-    const clientSecret = 'clientSecret';
+    const clientId = process.env.PAYPAL_CLIENT_ID;
+    const clientSecret = process.env.PAYPAL_CLIENT_SECRET;
 
     const response = await axios.post(
         'https://api.sandbox.paypal.com/v1/oauth2/token',
