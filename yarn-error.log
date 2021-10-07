@@ -1,0 +1,44 @@
+Arguments: 
+  /Users/matt/.asdf/installs/nodejs/16.6.0/bin/node /usr/local/Cellar/yarn/1.22.13/libexec/bin/yarn.js install
+
+PATH: 
+  /Users/matt/.asdf/installs/nodejs/16.6.0/bin:/Users/matt/.asdf/installs/nodejs/16.6.0/.npm/bin:/Users/matt/Projects/workstation/bin:/Users/matt/.asdf/shims:/Users/matt/.asdf/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/Users/matt/Projects/workstation/bin:/usr/local/opt/mysql-client/bin:/Users/matt/Dropbox/zsh/bin:/usr/local/opt/mysql-client/bin:/Users/matt/Dropbox/zsh/bin
+
+Yarn version: 
+  1.22.13
+
+Node version: 
+  16.6.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/matt/Projects/safe2delete/paypal-client/package.json: Unexpected token } in JSON at position 158
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.22.13/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.22.13/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.22.13/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "paypal-client",
+    "version": "1.0.0",
+    "main": "main.js",
+    "license": "ISC",
+    "private": false,
+    "scripts": {
+      "start": "node main.js",
+    },
+    "dependencies": {
+      "axios": "^0.21.1",
+      "qs": "^6.10.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
